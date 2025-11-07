@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sf: "SF Pro Display", sans-serif;
+  --color-Black: rgba(0, 0, 0, 1);
+  --color-Brown: rgba(49, 49, 49, 1);
+  --color-White: rgba(255, 255, 255, 1);
+  --color-WhiteText: rgba(255, 255, 255, 0.7);
+
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./Fonts/SF-Pro-Display-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./Fonts/SF-Pro-Display-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./Fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./Fonts/SF-Pro-Display-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(0, 0, 0, 1);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
