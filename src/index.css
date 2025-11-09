@@ -1,13 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+One&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sf: "SF Pro Display", sans-serif;
+  --font-sansita: 'Sansita One', sans-serif;
   --color-Black: rgba(0, 0, 0, 1);
   --color-Brown: rgba(49, 49, 49, 1);
   --color-White: rgba(255, 255, 255, 1);
   --color-WhiteText: rgba(255, 255, 255, 0.7);
-
+  --color-linearUp: #C1FF3B;
+  --color-linearDown: #C39452;
+  --color-SummoraText: rgba(255, 255, 255, 0.3);
 }
+
+@utility border-gradient-vertical {
+  border-width: 0.45px;
+  border-style: solid;
+
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(204, 204, 204, 0) 50.48%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  border-image-slice: 1;
+  border-radius: 37px;
+  -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
+  mask-image: radial-gradient(circle, white 100%, transparent 100%);
+  overflow: hidden;
+}
+
 
 @font-face {
   font-family: "SF Pro Display";
@@ -39,8 +61,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
