@@ -5,6 +5,7 @@ import Navbar from "./component/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import Service from "./component/service";
 import Customer from "./component/Customer";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Service />
         <Customer />
+        <Footer />
       </main>
     </BrowserRouter>
   );

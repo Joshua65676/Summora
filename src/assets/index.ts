@@ -8,7 +8,11 @@ import Developer from "./Development.jpg";
 import Tech from "./Tech_Img.jpg";
 import Planning from "./Planning.svg";
 import Marketing from "./Marketing.svg";
-import Support from "./Support.svg"
+import Support from "./Support.svg";
+import Twitter from "./Twitter.svg";
+import Facebook from "./Facebook.svg";
+import LinkedIn from "./LinkedIn.svg";
+import Instagram from "./Instagram.svg"
 
 export {
     Logo,
@@ -21,5 +25,9 @@ export {
     Tech,
     Planning,
     Marketing,
-    Support
+    Support,
+    Twitter,
+    Facebook,
+    Instagram,
+    LinkedIn
 }

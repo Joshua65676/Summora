@@ -1,4 +1,17 @@
-import { Business, Culture, Tech, Developer, Planning, Marketing, Support } from "../assets";
+import { 
+  Business,
+  Culture,
+  Tech,
+  Developer,
+  Planning,
+  Marketing,
+  Support,
+  Twitter,
+  Facebook,
+  LinkedIn,
+  Instagram
+}
+ from "../assets";
 
 export const navLists = [
   {id: 'list-1', name: 'Home', path: '/'},
@@ -23,16 +36,16 @@ export const service = [
   },
 
   { 
-    id: 2, 
-    src: Marketing, 
-    head: "Marketing and Promotion Solutions", 
+    id: 2,
+    src: Marketing,
+    head: "Marketing and Promotion Solutions",
     text: "Boost your event's visibility with our strategies."
   },
 
   { 
-    id: 3, 
-    src: Support, 
-    head: "On-Site Support and Coordination", 
+    id: 3,
+    src: Support,
+    head: "On-Site Support and Coordination",
     text: "Our team ensures everything runs smoothly on the day."
   }
 ]
@@ -58,4 +71,28 @@ export const review = [
     comment: "Our conference went off without a hitch thanks to Summora. The organization, design, and atmosphere were beyond impressive.",
     style: "rotate-[1.46deg]"
   }
+]
+
+export const ExploreList = [
+  {id: 1, head: "Home", link: ""},
+  {id: 2, head: "About", link: ""},
+  {id: 3, head: "Contact Us", link: ""},
+  {id: 4, head: "Events", link: ""}
+]
+
+export const ContactList = [
+  {id: 1, head: "Call us anytime at", link: ""},
+  {id: 2, head: "+1 (555) 123-4567", link: ""},
+]
+
+export const LegalList = [
+  {id: 1, head: "Privacy policy", link: ""},
+  {id: 2, head: "Terms of servoce", link: ""},
+]
+
+export const SocialLink = [
+  {id: 1, social: LinkedIn, label: "linkedin", link: ""},
+  {id: 2, social: Facebook, label: "facebook", link: ""},
+  {id: 3, social: Twitter, label: "twitter", link: ""},
+  {id: 4, social: Instagram, label: "instagram", link: ""},
 ]

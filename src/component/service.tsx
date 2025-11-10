@@ -24,10 +24,11 @@ const Service: React.FC = () => {
                   <motion.img
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true, amount: 0.5}}
                     transition={{
                       duration: 0.5,
                       ease: "easeOut",
-                      delay: id * 0.5,
+                      delay: id * 0.4,
                     }}
                     src={src}
                     alt="images"
@@ -35,24 +36,26 @@ const Service: React.FC = () => {
                   <motion.h2
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true, amount: 0.2}}
                     transition={{
-                      duration: 0.8,
+                      duration: 0.6,
                       ease: "easeOut",
-                      delay: id * 0.6,
+                      delay: id * 0.8,
                     }}
-                    className="font-medium text-[36px] leading-[130%] tracking-[-1%] text-White"
+                    className="font-medium font-aleo text-[36px] leading-[130%] tracking-[-1%] text-White"
                   >
                     {head}
                   </motion.h2>
                   <motion.p
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true, amount: 0.5}}
                     transition={{
-                      duration: 0.8,
+                      duration: 0.7,
                       ease: "easeOut",
-                      delay: 2,
+                      delay: 0.2,
                     }}
-                    className="font-[400px] text-[18px] tracking-0 leading-[150%] text-WhiteText"
+                    className="font-[400px] font-worksans text-[18px] tracking-0 leading-[150%] text-WhiteText"
                   >
                     {text}
                   </motion.p>

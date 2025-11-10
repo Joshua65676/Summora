@@ -1,18 +1,31 @@
 import React from "react";
 import { Button } from "./ui/Button";
 import { Arrow } from "../assets";
+import { motion } from "motion/react";
 
 const CTA: React.FC = () => {
   return (
     <main className="container mx-auto w-full max-w-6xl">
       <section className="flex flex-row justify-between items-center">
         <div className="flex flex-col">
-          <h2 className="font-sf font-medium text-[48px] leading-[150%] tracking-[0%] text-White">
+          <motion.h2
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+            className="font-sf font-medium text-[48px] leading-[150%] tracking-[0%] text-White"
+          >
             Join Us for an Exciting Event
-          </h2>
-          <p className="font-sf font-[400px] text-WhiteText text-[18px] leading-[150%] tracting-[0%]">
+          </motion.h2>
+          <motion.p
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+            className="font-sf font-[400px] text-WhiteText text-[18px] leading-[150%] tracting-[0%]"
+          >
             Don't miss out on this incredible opportunity!
-          </p>
+          </motion.p>
         </div>
 
         <div>
