@@ -17,7 +17,7 @@ const Grid: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setShuffled(shuffle(images));
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 

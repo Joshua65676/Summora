@@ -8,8 +8,11 @@
   --color-Brown: rgba(49, 49, 49, 1);
   --color-White: rgba(255, 255, 255, 1);
   --color-WhiteText: rgba(255, 255, 255, 0.7);
+  --color-WhiteBg: rgba(255, 255, 255, 0.2);
   --color-linearUp: #C1FF3B;
   --color-linearDown: #C39452;
+  /* --color-GradientUp: #C7FE4F;
+  --color-GradientDown:  #C29551; */
   --color-SummoraText: rgba(255, 255, 255, 0.3);
 }
 
@@ -63,4 +66,10 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.custom-border {
+  border-image: linear-gradient(180deg, #C7FE4F 0%, #C29551 100%);
+  border-image-slice: 1;
+  border-radius: 15px;
 }

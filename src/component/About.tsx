@@ -4,7 +4,7 @@ import Grid from "./Grid";
 
 const About: React.FC = () => {
   return (
-    <main className="bg-Brown -mt-15">
+    <main className="bg-Brown -mt-15 rounded-b-[5rem]">
       <main className="container w-full mx-auto max-w-6xl py-20">
         <section className="flex flex-col gap-10">
           <div className="flex flex-col gap-5 text-center items-center justify-center">
