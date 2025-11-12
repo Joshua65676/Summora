@@ -6,16 +6,16 @@ import { motion } from "motion/react";
 
 const Customer: React.FC = () => {
   return (
-    <main className="mx-auto max-w-6xl container w-full py-20">
-      <section className="flex flex-col gap-32">
-        <main className="flex flex-row justify-between items-center">
+    <main className="mx-auto max-w-6xl container w-full xl:py-20 py-10 px-5">
+      <section className="flex flex-col gap-10 xl:gap-32">
+        <main className="flex flex-col xl:flex-row xl:justify-between xl:items-center gap-25 xl:gap-0">
           <div className="flex flex-col gap-5">
             <motion.h2
               initial={{ y: -100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.9 }}
               transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-              className="font-sf font-medium text-[48px] leading-[120%] tracking-[-1%] text-White"
+              className="font-sf font-medium text-[40px] xl:text-[48px] leading-[120%] tracking-[-1%] text-White"
             >
               what our customers say
             </motion.h2>
@@ -24,7 +24,7 @@ const Customer: React.FC = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
-              className="w-[611px] font-sf font-[400px] text-[18px] leading-[150%] tracking-0 text-WhiteText"
+              className="xl:w-[611px] font-sf font-[400px] text-[18px] leading-[150%] tracking-0 text-WhiteText"
             >
               The true measure of Summora’s impact is found in the voices of
               those who’ve experienced it their stories, their successes, and
@@ -48,13 +48,13 @@ const Customer: React.FC = () => {
               {review.map(({ id, name, comment, style }) => (
                 <li
                   key={id}
-                  className={`${style} bg-WhiteBg border-l-10 border-solid custom-border rounded-[15px] py-[15px] pl-5 pr-[30px] gap-[7px] flex flex-col w-[517px]`}
+                  className={`${style} bg-WhiteBg border-l-10 border-solid custom-border rounded-[15px] py-[15px] pl-5 pr-[30px] gap-[7px] flex flex-col w-[400px] ml-3 xl:w-[517px]`}
                 >
                   <>
                     <h2 className="font-sf font-medium text-[18px] leading-[150%] tracking-[0%] text-White">
                       {name}
                     </h2>
-                    <p className="font-sf font-[400px] text-[18px] leading-[150%] tracking-[0%] text-WhiteText w-[467px]">
+                    <p className="font-sf font-[400px] text-[18px] leading-[150%] tracking-[0%] text-WhiteText xl:w-[467px]">
                       {comment}
                     </p>
                   </>

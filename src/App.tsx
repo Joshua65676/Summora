@@ -10,7 +10,7 @@ import Footer from "./component/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <main className="">
+      <main className="overflow-x-hidden xl:overflow-x-scroll">
         <Navbar />
         <Hero />
         <About />

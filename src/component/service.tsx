@@ -4,20 +4,20 @@ import { motion } from "motion/react";
 
 const Service: React.FC = () => {
   return (
-    <main className="mx-auto max-w-6xl w-full container py-20">
+    <main className="mx-auto max-w-6xl w-full container py-20 px-5">
       <section className="flex flex-col items-center justify-center gap-15">
         <div className="flex flex-col items-center gap-5 justify-center text-center">
-          <h2 className="font-sf font-medium text-[48px] leading-[120%] tracking-[-1%] text-White">
+          <h2 className="font-sf font-medium xl:text-[48px] text-[35px] leading-[120%] tracking-[-1%] text-White">
             Explore Our Comprehensive Service Offerings
           </h2>
-          <p className="w-3xl h-[54px] font-sf font-[400px] text-[18px] leading-[150%] tracking-0 text-WhiteText">
+          <p className="xl:w-3xl h-[54px] font-sf font-[400px] text-[18px] leading-[150%] tracking-0 text-WhiteText">
             We provide a range of services tailored to meet your needs. Our
             expert team is dedicated to delivering exceptional results.
           </p>
         </div>
 
         <>
-          <ul className="grid grid-cols-3 gap-8">
+          <ul className="grid grid-cols-1 xl:grid-cols-3 gap-8">
             {service.map(({ id, src, head, text }) => (
               <li key={id}>
                 <div className="flex flex-col gap-5 items-center justify-center text-center">

@@ -6,17 +6,17 @@ import Hero2 from "./Hero2";
 
 const Hero: React.FC = () => {
   return (
-    <main className="w-full container mx-auto max-w-6xl py-30 px-2 flex flex-col gap-25">
+    <main className="w-full container mx-auto max-w-6xl py-30 px-5 flex flex-col gap-25">
       {/* Hero */}
-      <main className="flex flex-row justify-between items-center">
+      <main className="xl:flex xl:flex-row xl:justify-between xl:items-center space-y-5">
         {/* Section 1 */}
-        <section className="flex flex-col gap-5">
+        <section className="flex flex-col xl:gap-5 gap-10">
           <div className="flex flex-col gap-5">
             <motion.h2
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
-              className="font-sf text-[65.31px] leading-[100%] tracking-[-1%] font-[400px] text-WhiteText w-[530px]"
+              className="font-sf text-[35px] xl:text-[65.31px] leading-[100%] tracking-[-1%] font-[400px] text-WhiteText w-[530px]"
             >
               Elevate your events into{" "}
               <span className="text-White font-medium">
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.9 }}
-              className="font-sf font-[400px] text-[16px] leading-[150%] tracking-[0%] text-WhiteText w-[485px] h-24"
+              className="font-sf font-[400px] text-[16px] leading-[150%] tracking-[0%] text-WhiteText w-[400px] xl:w-[485px] h-24"
             >
               Join us for an extraordinary gathering of industry leaders,
               visionaries, and innovators. Engage in inspiring
@@ -52,12 +52,12 @@ const Hero: React.FC = () => {
 
         {/* Section 2 */}
         <section className="flex flex-col relative bottom-5">
-          <div className="flex items-center justify-center relative top-20">
+          <div className="flex items-center justify-center relative top-19 xl:top-25">
             <motion.span
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.9 }}
-              className="font-sansita text-[33px] leading-[150%] tracking-[0%] text-SummoraText"
+              className="font-sansita text-[30px] xl:text-[35px] leading-[150%] tracking-[0%] text-SummoraText"
             >
               Summora
             </motion.span>

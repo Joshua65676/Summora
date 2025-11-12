@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
           : ""
       }`}
     >
-      <main className="container mx-auto max-w-6xl w-full py-6">
-        <section className="flex flex-row justify-between items-center text-center">
+      <main className="container mx-auto max-w-6xl w-full py-6 px-4">
+        <section className="flex flex-row xl:justify-between items-center text-center gap-15">
           <LogoImg />
           <div className="flex flex-row gap-20 items-center ">
             <MenuList />

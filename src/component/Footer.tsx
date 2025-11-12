@@ -10,10 +10,10 @@ const Footer: React.FC = () => {
       <main className="container mx-auto max-w-6xl w-full flex flex-col gap-10">
         {/* Footer Details */}
         <div className="flex flex-col gap-5 text-center items-center">
-          <h2 className="font-sf font-medium w-[726px] text-[48px] text-White leading-[150%] tracking-[0%]">
+          <h2 className="font-sf font-medium xl:w-[726px] xl:text-[48px] text-[35px] text-White leading-[150%] tracking-[0%]">
             Ready to elevate your event experience
           </h2>
-          <p className="font-sf font-medium text-[18px] text-WhiteText leading-[150%] w-[851px] tracking-[0%]">
+          <p className="font-sf font-medium text-[18px] text-WhiteText leading-[150%] xl:w-[851px] w-[450px] tracking-[0%]">
             Where ideas meet inspiration, forging connections that shape the
             future and moments that last a lifetime.
           </p>
@@ -25,9 +25,9 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <main className="flex flex-col gap-5">
+        <main className="flex flex-col gap-5 px-5 xl:pl-0">
           {/* Footer Logo, Subscribe Button and List*/}
-          <section className="flex flex-row justify-between items-center">
+          <section className="flex flex-col xl:flex-row xl:justify-between xl:items-center xl:gap-0 gap-10">
             <main className="flex flex-col gap-5">
               <LogoImg />
 
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                   </span>
                 </button>
 
-                <div>
+                <div className="flex flex-col gap-4 xl:gap-0 xl:flex-row">
                   <input
                     type="email"
                     placeholder="Your Email Here"
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
           </section>
 
           {/* Social Link  */}
-          <section className="flex flex-row justify-between items-center">
+          <section className="flex flex-col xl:flex-row justify-between gap-5 xl:gap-0 xl:items-center">
             <Link to="">
               <p className="underline font-roboto font-[400px] text-[18px] text-White leading-[150%] tracking-[0%]">
                 By joining you accept our Privacy Policy.
@@ -130,9 +130,9 @@ const Footer: React.FC = () => {
           </section>
         </main>
 
-        <section className="flex flex-row items-center justify-between">
-          <p className="font-worksans font-[400px] text-[14px] text-White leading-[150%] tracking-[0%] pt-18">© 2025 Summora. All rights reserved.</p>
-          <h2 className="font-sansita font-[400px] leading-[150%] tracking-[0%] text-SummoraText w-[616px] text-[128px]">Summora</h2>
+        <section className="flex flex-col-reverse xl:flex-row items-center justify-between">
+          <p className="font-worksans font-[400px] text-[14px] text-White leading-[150%] tracking-[0%] xl:pt-18">© 2025 Summora. All rights reserved.</p>
+          <h2 className="font-sansita font-[400px] leading-[150%] tracking-[0%] text-SummoraText w-[616px] text-[128px] hidden xl:flex">Summora</h2>
         </section>
       </main>
     </footer>
