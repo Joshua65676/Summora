@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.9 }}
-              className="font-sansita text-[30px] xl:text-[35px] leading-[150%] tracking-[0%] text-SummoraText"
+              className="font-sansita text-[27px] xl:text-[35px] leading-[150%] tracking-[0%] text-SummoraText"
             >
               Summora
             </motion.span>

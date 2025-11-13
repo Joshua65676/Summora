@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const MenuList: React.FC = () => {
   return (
-    <main className="border-x-[0.45px] rounded-[37px] border-x-gray-700 hidden lg:flex">
+    <main className="border-x-[0.45px] rounded-[37px] border-x-gray-700 hidden lg:flex md:flex">
       <div className=" px-[18px] py-[9px] border-gradient-vertical">
         <ul className="flex flex-row items-center text-center gap-5">
           {navLists.map(({ id, name, path }) => (

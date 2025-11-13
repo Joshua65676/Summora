@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import LogoImg from "./LogoImg";
 import MenuList from "./MenuList";
 import { NavLink } from "react-router-dom";
+import Sidebar from "./Sidebar";
+import { Button } from "./ui/Button";
 
 const Navbar: React.FC = () => {
   const [stickyClass, setStickyClass] = useState<boolean>(false);
@@ -20,24 +22,25 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50  ${
-        stickyClass
-          ? "bg-GrayBg backdrop-blur-md shadow-md"
-          : ""
+        stickyClass ? "bg-GrayBg backdrop-blur-md shadow-md" : ""
       }`}
     >
       <main className="container mx-auto max-w-6xl w-full py-6 px-4">
-        <section className="flex flex-row xl:justify-between items-center text-center gap-15">
+        <section className="flex flex-row items-center text-center justify-between">
           <LogoImg />
-          <div className="flex flex-row gap-20 items-center ">
+          <div className="flex flex-row gap-10 justify-between items-center ">
             <MenuList />
 
             <main className="border-x-[0.45px] rounded-[37px] border-x-gray-700">
-              <div className="px-[18px] py-[9px] border-gradient-vertical">
+              <Button className="px-[18px] py-[9px] bg-Black border-gradient-vertical">
                 <NavLink to="#">
-                  <span className="">Book Now</span>
+                  <span className="text-White">Book Now</span>
                 </NavLink>
-              </div>
+              </Button>
             </main>
+          </div>
+          <div className="xl:hidden md:hidden flex">
+            <Sidebar />
           </div>
         </section>
       </main>
