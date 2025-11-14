@@ -1,4 +1,4 @@
-"use client";
+import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import { motion, stagger, type Variants } from "motion/react";
 import LogoImg from "./LogoImg";
@@ -31,7 +31,7 @@ export default function Sidebar() {
 
   const navVariants = {
     open: {
-      transition: { delayChildren: stagger(0.7, { startDelay: 0.5 }) },
+      transition: { delayChildren: stagger(0.4, { startDelay: 0.5 }) },
     },
     closed: {
       transition: { delayChildren: stagger(0.05, { from: "last" }) },
@@ -43,7 +43,7 @@ export default function Sidebar() {
       y: 0,
       opacity: 1,
       transition: {
-        y: { stiffness: 1000, velocity: -100 },
+        y: { stiffness: 1000, velocity: 10 },
       },
     },
     closed: {
@@ -70,10 +70,10 @@ export default function Sidebar() {
         initial={false}
         animate={isOpen ? "open" : "closed"}
         variants={sidebarVariants}
-        className="fixed top-0 right-0 h-screen w-screen bg-amber-100 shadow-lg z-40 flex flex-col justify-start items-center pt-7 overflow-hidden"
+        className="fixed top-0 right-0 h-screen w-screen bg-MeunBg shadow-lg z-40 flex flex-col justify-start items-center pt-7 overflow-hidden"
       >
         {/* Logo + Close Icon */}
-        <div className="w-screen px-4 flex flex-row justify-between items-center mb-10">
+        <div className="w-screen px-4 flex flex-row justify-between items-center mb-20 text-center">
           <LogoImg />
 
           <Button className="px-[18px] py-[9px] bg-Black border-gradient-vertical">
@@ -84,16 +84,16 @@ export default function Sidebar() {
 
           <button
             onClick={() => setIsOpen(false)}
-            className="text-xl cursor-pointer"
+            className="text-2xl cursor-pointer"
           >
-            ✖️
+            <MdClose />
           </button>
         </div>
 
         {/* Menu List */}
         <motion.ul
           variants={navVariants}
-          className="flex flex-col gap-6 items-center"
+          className="flex flex-col gap-6 items-center justify-center text-center"
         >
           {navLists.map((item, i) => (
             <motion.li
@@ -103,9 +103,11 @@ export default function Sidebar() {
               key={i}
               className="flex items-center gap-3 text-lg cursor-pointer"
             >
-              <Link to={item.path}>
-                <span>{item.name}</span>
-              </Link>
+              <Button className="px-[18px] py-[9px] bg-Black border-gradient-vertical">
+                <Link to={item.path}>
+                  <span className="font-sf text-[18.14px] leading-[150%] tracking-[0%] font-[400px] text-WhiteText hover:text-White">{item.name}</span>
+                </Link>
+              </Button>
             </motion.li>
           ))}
         </motion.ul>
