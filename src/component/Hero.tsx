@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       {/* Hero */}
       <main className="xl:flex xl:flex-row xl:justify-between xl:items-center space-y-5 md:flex-row md:justify-between md:flex md:items-center">
         {/* Section 1 */}
-        <section className="flex flex-col xl:gap-5 gap-10">
+        <section className="flex flex-col xl:gap-5 sm:gap-10 md:gap-10 xs:gap-17">
           <div className="flex flex-col gap-5">
             <motion.h2
               initial={{ y: -100, opacity: 0 }}
@@ -52,12 +52,12 @@ const Hero: React.FC = () => {
 
         {/* Section 2 */}
         <section className="flex flex-col relative bottom-5">
-          <div className="flex items-center justify-center relative top-19 md:top-20 xl:top-25">
+          <div className="flex items-center justify-center relative xs:top-15 sm:top-19 md:top-20 xl:top-25">
             <motion.span
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.9 }}
-              className="font-sansita text-[27px] md:text-[25px] xl:text-[35px] leading-[150%] tracking-[0%] text-SummoraText"
+              className="font-sansita xs:text-[22px] sm:text-[30px] md:text-[25px] xl:text-[35px] leading-[150%] tracking-[0%] text-SummoraText"
             >
               Summora
             </motion.span>

@@ -13,7 +13,7 @@ const CTA: React.FC = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-            className="font-sf font-medium text-[35px] xl:text-[48px] leading-[150%] tracking-[0%] text-White"
+            className="font-sf font-medium xs:text-[26px] sm:text-[35px] md:text-[35px] xl:text-[48px] leading-[150%] tracking-[0%] text-White"
           >
             Join Us for an Exciting Event
           </motion.h2>

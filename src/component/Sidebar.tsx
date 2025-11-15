@@ -76,7 +76,7 @@ export default function Sidebar() {
         <div className="w-screen px-4 flex flex-row justify-between items-center mb-20 text-center">
           <LogoImg />
 
-          <Button className="px-[18px] py-[9px] bg-Black border-gradient-vertical">
+          <Button className="px-[18px] py-[9px] bg-Black border-gradient-vertical hidden sm:flex">
             <NavLink to="#">
               <span className="text-White">Book Now</span>
             </NavLink>
@@ -110,6 +110,11 @@ export default function Sidebar() {
               </Button>
             </motion.li>
           ))}
+          <Button className="px-[18px] py-[9px] bg-Black border-gradient-vertical sm:hidden xs:flex">
+            <NavLink to="#">
+              <span className="text-White">Book Now</span>
+            </NavLink>
+          </Button>
         </motion.ul>
       </motion.div>
     </div>

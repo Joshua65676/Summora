@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-row gap-10 justify-between items-center ">
             <MenuList />
 
-            <main className="border-x-[0.45px] rounded-[37px] border-x-gray-700">
+            <main className="border-x-[0.45px] rounded-[37px] border-x-gray-700 xs:hidden xl:flex md:flex sm:flex">
               <Button className="px-[18px] py-[9px] bg-Black border-gradient-vertical">
                 <NavLink to="#">
                   <span className="text-White">Book Now</span>

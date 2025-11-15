@@ -7,7 +7,7 @@ const Service: React.FC = () => {
     <main className="mx-auto max-w-6xl w-full container py-20 px-5">
       <section className="flex flex-col items-center justify-center gap-15">
         <div className="flex flex-col items-center gap-5 justify-center text-center">
-          <h2 className="font-sf font-medium xl:text-[48px] text-[35px] leading-[120%] tracking-[-1%] text-White">
+          <h2 className="font-sf font-medium xl:text-[48px] xs:text-[25px] sm:text-[35px] md:text-[35px] leading-[120%] tracking-[-1%] text-White">
             Explore Our Comprehensive Service Offerings
           </h2>
           <p className="xl:w-3xl h-[54px] font-sf font-[400px] text-[18px] leading-[150%] tracking-0 text-WhiteText">

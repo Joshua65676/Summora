@@ -25,7 +25,7 @@ const Hero2: React.FC = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
             viewport={{ once: true, amount: 0.5 }}
-            className="xl:w-[530px] font-sf font-medium xl:text-[43.54px] text-[29px] leading-[150%] tracking-[0%] text-White"
+            className="xl:w-[530px] font-sf font-medium xl:text-[43.54px] xs:text-[20px] sm:text-[25px] md:text-[29px] leading-[150%] tracking-[0%] text-White"
           >
             Discover What Sets Us Apart in Event Management Excellence
           </motion.h2>

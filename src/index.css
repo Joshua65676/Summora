@@ -3,6 +3,8 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-xs: 22.5rem;
+  --breakpoint-sm: 26rem;
   --font-sf: "SF Pro Display", sans-serif;
   --font-sansita: 'Sansita One', sans-serif;
   --font-roboto: 'Roboto', sans-serif;

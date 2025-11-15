@@ -15,7 +15,7 @@ const Customer: React.FC = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.9 }}
               transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-              className="font-sf font-medium text-[40px] xl:text-[48px] leading-[120%] tracking-[-1%] text-White"
+              className="font-sf font-medium xs:text-[30px] sm:text-[40px] md:text-[40px] xl:text-[48px] leading-[120%] tracking-[-1%] text-White"
             >
               what our customers say
             </motion.h2>
@@ -24,7 +24,7 @@ const Customer: React.FC = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
-              className="xl:w-[611px] font-sf font-[400px] text-[18px] leading-[150%] tracking-0 text-WhiteText"
+              className="xl:w-[611px] font-sf font-[400px] xs:text-[15px] sm:text-[18px] md:text-[18px] leading-[150%] tracking-0 text-WhiteText"
             >
               The true measure of Summora’s impact is found in the voices of
               those who’ve experienced it their stories, their successes, and
@@ -43,12 +43,12 @@ const Customer: React.FC = () => {
             <motion.ul
               animate={{ y: [0, -50, 0] }}
               transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-              className="flex flex-col gap-3"
+              className="flex flex-col gap-3 xs:gap-1"
             >
               {review.map(({ id, name, comment, style }) => (
                 <li
                   key={id}
-                  className={`${style} bg-WhiteBg border-l-10 border-solid custom-border rounded-[15px] py-[15px] pl-5 pr-[30px] gap-[7px] flex flex-col w-[400px] ml-3 xl:w-[517px]`}
+                  className={`${style} bg-WhiteBg border-l-10 border-solid custom-border rounded-[15px] py-[15px] pl-5 pr-[30px] gap-[7px] flex flex-col sm:w-[400px] md:w-[400px] ml-3 xl:w-[517px]`}
                 >
                   <>
                     <h2 className="font-sf font-medium text-[18px] leading-[150%] tracking-[0%] text-White">

@@ -10,10 +10,10 @@ const Footer: React.FC = () => {
       <main className="container mx-auto max-w-6xl w-full flex flex-col gap-10">
         {/* Footer Details */}
         <div className="flex flex-col gap-5 text-center items-center">
-          <h2 className="font-sf font-medium xl:w-[726px] xl:text-[48px] text-[35px] text-White leading-[150%] tracking-[0%]">
+          <h2 className="font-sf font-medium xl:w-[726px] xl:text-[48px] xs:text-[20px] sm:text-[35px] md:text-[35px] text-White leading-[150%] tracking-[0%]">
             Ready to elevate your event experience
           </h2>
-          <p className="font-sf font-medium text-[18px] text-WhiteText leading-[150%] xl:w-[851px] w-[450px] tracking-[0%]">
+          <p className="font-sf font-medium text-[18px] text-WhiteText leading-[150%] xl:w-[851px] xs:w-[370px] sm:w-[450px] md:w-[450px] tracking-[0%]">
             Where ideas meet inspiration, forging connections that shape the
             future and moments that last a lifetime.
           </p>
